@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2025-12-10 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "connection_section",
+  "platform_url",
+  "api_key",
+  "column_break_conn",
+  "connection_status",
+  "last_connected",
+  "customer_info_section",
+  "customer_id",
+  "company_name",
+  "column_break_cust",
+  "customer_status",
+  "subscription_plan",
+  "waba_section",
+  "waba_id",
+  "phone_number",
+  "column_break_waba",
+  "phone_number_id",
+  "display_name",
+  "usage_section",
+  "minutes_used_this_month",
+  "monthly_minutes_included",
+  "column_break_usage",
+  "minutes_remaining",
+  "last_sync"
+ ],
+ "fields": [
+  {
+   "fieldname": "connection_section",
+   "fieldtype": "Section Break",
+   "label": "Platform Connection"
+  },
+  {
+   "fieldname": "platform_url",
+   "fieldtype": "Data",
+   "label": "Platform URL",
+   "reqd": 1,
+   "description": "URL of the central WhatsApp calling platform (e.g., https://platform.yourcompany.com)"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "label": "API Key",
+   "reqd": 1,
+   "description": "API key provided by the platform for authentication"
+  },
+  {
+   "fieldname": "column_break_conn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "connection_status",
+   "fieldtype": "Select",
+   "label": "Connection Status",
+   "options": "Not Connected\nConnected\nError",
+   "default": "Not Connected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_connected",
+   "fieldtype": "Datetime",
+   "label": "Last Connected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_info_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information",
+   "description": "Auto-populated from platform after connection"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "label": "Customer ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cust",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_status",
+   "fieldtype": "Data",
+   "label": "Customer Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subscription_plan",
+   "fieldtype": "Data",
+   "label": "Subscription Plan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "waba_section",
+   "fieldtype": "Section Break",
+   "label": "WhatsApp Business Account",
+   "description": "Your connected WhatsApp Business Account details"
+  },
+  {
+   "fieldname": "waba_id",
+   "fieldtype": "Data",
+   "label": "WABA ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_waba",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number_id",
+   "fieldtype": "Data",
+   "label": "Phone Number ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "display_name",
+   "fieldtype": "Data",
+   "label": "Display Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "usage_section",
+   "fieldtype": "Section Break",
+   "label": "Usage & Limits"
+  },
+  {
+   "fieldname": "minutes_used_this_month",
+   "fieldtype": "Float",
+   "label": "Minutes Used This Month",
+   "read_only": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "monthly_minutes_included",
+   "fieldtype": "Int",
+   "label": "Monthly Minutes Included",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_usage",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minutes_remaining",
+   "fieldtype": "Float",
+   "label": "Minutes Remaining",
+   "read_only": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync",
+   "read_only": 1,
+   "description": "Last time usage data was synced from platform"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-12-10 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "WA Calling Client",
+ "name": "Client Config",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Sales User"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
