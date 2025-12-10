@@ -25,7 +25,7 @@ class ClientConfig(Document):
 	def test_connection(self):
 		"""Test connection to central platform"""
 		try:
-			from wa_calling_client.wa_calling_client.api.platform_client import PlatformClient
+			from wa_platform_client.wa_platform_client.api.platform_client import PlatformClient
 
 			client = PlatformClient()
 			result = client.authenticate()
@@ -70,7 +70,7 @@ class ClientConfig(Document):
 	def sync_usage(self):
 		"""Sync usage data from platform"""
 		try:
-			from wa_calling_client.wa_calling_client.api.platform_client import PlatformClient
+			from wa_platform_client.wa_platform_client.api.platform_client import PlatformClient
 
 			client = PlatformClient()
 			result = client.get_subscription()
