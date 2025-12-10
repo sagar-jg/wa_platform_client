@@ -184,7 +184,7 @@ class WhatsAppCallWidget {
 
 			// Make call via platform
 			const response = await frappe.call({
-				method: 'wa_calling_client.wa_calling_client.api.platform_client.make_call',
+				method: 'wa_platform_client.wa_platform_client.api.platform_client.make_call',
 				args: {
 					to_number: toNumber,
 					lead_reference: leadReference
@@ -225,7 +225,7 @@ class WhatsAppCallWidget {
 			this.updateUI('connecting', __('Connecting...'));
 
 			const response = await frappe.call({
-				method: 'wa_calling_client.wa_calling_client.api.platform_client.answer_call',
+				method: 'wa_platform_client.wa_platform_client.api.platform_client.answer_call',
 				args: { call_id: callId }
 			});
 
@@ -249,7 +249,7 @@ class WhatsAppCallWidget {
 		try {
 			if (this.currentCall) {
 				await frappe.call({
-					method: 'wa_calling_client.wa_calling_client.api.platform_client.end_call',
+					method: 'wa_platform_client.wa_platform_client.api.platform_client.end_call',
 					args: { call_id: this.currentCall.call_id }
 				});
 			}
@@ -297,7 +297,7 @@ class WhatsAppCallWidget {
 
 			// Send offer to Janus via platform
 			const response = await frappe.call({
-				method: 'wa_calling_client.wa_calling_client.api.platform_client.join_janus_room',
+				method: 'wa_platform_client.wa_platform_client.api.platform_client.join_janus_room',
 				args: {
 					call_id: this.currentCall.call_id,
 					sdp_offer: this.peerConnection.localDescription.sdp

@@ -107,7 +107,7 @@ function load_dashboard_data(page) {
 function call_api(method, args = {}) {
 	return new Promise((resolve, reject) => {
 		frappe.call({
-			method: `wa_calling_client.wa_calling_client.api.platform_client.${method}`,
+			method: `wa_platform_client.wa_platform_client.api.platform_client.${method}`,
 			args: args,
 			callback: r => resolve(r.message || {}),
 			error: reject
