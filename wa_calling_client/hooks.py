@@ -13,7 +13,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/wa_calling_client/css/wa_calling_client.css"
-app_include_js = "/assets/wa_calling_client/js/wa_calling_client.js"
+# app_include_js = "/assets/wa_calling_client/js/wa_calling_client.js"  # Uncomment after install, then run: bench build
 
 # include js, css files in header of web template
 # web_include_css = "/assets/wa_calling_client/css/wa_calling_client.css"
