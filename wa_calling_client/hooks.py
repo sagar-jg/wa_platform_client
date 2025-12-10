@@ -1,7 +1,7 @@
 # Copyright (c) 2025, Your Company and contributors
 # For license information, please see license.txt
 
-app_name = "wa_platform_client"
+app_name = "wa_calling_client"
 app_title = "WhatsApp Calling Client"
 app_publisher = "Your Company"
 app_description = "Lightweight client app for WhatsApp calling integration with central platform"
@@ -12,12 +12,12 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/wa_platform_client/css/wa_platform_client.css"
-app_include_js = "/assets/wa_platform_client/js/wa_platform_client.js"
+# app_include_css = "/assets/wa_calling_client/css/wa_calling_client.css"
+app_include_js = "/assets/wa_calling_client/js/wa_calling_client.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/wa_platform_client/css/wa_platform_client.css"
-# web_include_js = "/assets/wa_platform_client/js/wa_platform_client.js"
+# web_include_css = "/assets/wa_calling_client/css/wa_calling_client.css"
+# web_include_js = "/assets/wa_calling_client/js/wa_calling_client.js"
 
 # Home Pages
 # ----------
@@ -39,20 +39,20 @@ app_include_js = "/assets/wa_platform_client/js/wa_platform_client.js"
 # Installation
 # ------------
 
-# before_install = "wa_platform_client.install.before_install"
-# after_install = "wa_platform_client.install.after_install"
+# before_install = "wa_calling_client.install.before_install"
+# after_install = "wa_calling_client.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "wa_platform_client.uninstall.before_uninstall"
-# after_uninstall = "wa_platform_client.uninstall.after_uninstall"
+# before_uninstall = "wa_calling_client.uninstall.before_uninstall"
+# after_uninstall = "wa_calling_client.uninstall.after_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "wa_platform_client.notifications.get_notification_config"
+# notification_config = "wa_calling_client.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -98,39 +98,39 @@ doctype_js = {
 
 # scheduler_events = {
 # 	"all": [
-# 		"wa_platform_client.tasks.all"
+# 		"wa_calling_client.tasks.all"
 # 	],
 # 	"daily": [
-# 		"wa_platform_client.tasks.daily"
+# 		"wa_calling_client.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"wa_platform_client.tasks.hourly"
+# 		"wa_calling_client.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"wa_platform_client.tasks.weekly"
+# 		"wa_calling_client.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"wa_platform_client.tasks.monthly"
+# 		"wa_calling_client.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "wa_platform_client.install.before_tests"
+# before_tests = "wa_calling_client.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "wa_platform_client.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "wa_calling_client.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "wa_platform_client.task.get_dashboard_data"
+# 	"Task": "wa_calling_client.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled

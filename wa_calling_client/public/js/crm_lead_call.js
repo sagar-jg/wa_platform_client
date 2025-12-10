@@ -46,7 +46,7 @@ function add_call_button(frm) {
 function show_call_dialog(frm, mobile) {
 	// First check permission
 	frappe.call({
-		method: 'wa_platform_client.wa_platform_client.api.platform_client.check_permission',
+		method: 'wa_calling_client.wa_calling_client.api.platform_client.check_permission',
 		args: { to_number: mobile },
 		callback: function(r) {
 			if (r.message && r.message.can_call) {
@@ -76,7 +76,7 @@ function show_call_dialog(frm, mobile) {
 
 function request_call_permission(frm, mobile) {
 	frappe.call({
-		method: 'wa_platform_client.wa_platform_client.api.platform_client.request_permission',
+		method: 'wa_calling_client.wa_calling_client.api.platform_client.request_permission',
 		args: {
 			to_number: mobile,
 			lead_reference: frm.doc.name
