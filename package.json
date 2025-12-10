@@ -1,0 +1,11 @@
+{
+  "name": "wa_calling_client",
+  "version": "0.0.1",
+  "description": "WhatsApp Calling Client - Lightweight client app for WhatsApp calling integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Company",
+  "license": "MIT"
+}
