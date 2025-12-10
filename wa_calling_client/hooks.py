@@ -91,7 +91,7 @@ app_license = "MIT"
 # ----------
 # Add custom JS to doctypes
 doctype_js = {
-    "CRM Lead": ["public/js/wa_calling_client.js", "public/js/crm_lead_call.js"]
+    "CRM Lead": ["wa_calling_client/js/wa_calling_client.js", "wa_calling_client/js/crm_lead_call.js"]
 }
 
 # Scheduled Tasks
