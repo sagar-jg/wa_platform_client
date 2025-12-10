@@ -12,8 +12,9 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/wa_calling_client/css/wa_calling_client.css"
-app_include_js = "/assets/wa_calling_client/js/wa_calling_client.js"
+# Note: Commented out to avoid esbuild issues. JS is loaded via doctype_js instead.
+# app_include_css = "/assets/wa_calling_client/css/wa_calling_client.css"
+# app_include_js = "/assets/wa_calling_client/js/wa_calling_client.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/wa_calling_client/css/wa_calling_client.css"
@@ -90,7 +91,7 @@ app_include_js = "/assets/wa_calling_client/js/wa_calling_client.js"
 # ----------
 # Add custom JS to doctypes
 doctype_js = {
-    "CRM Lead": "public/js/crm_lead_call.js"
+    "CRM Lead": ["public/js/wa_calling_client.js", "public/js/crm_lead_call.js"]
 }
 
 # Scheduled Tasks
